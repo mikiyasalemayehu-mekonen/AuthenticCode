@@ -5,9 +5,11 @@ export default function Home() {
   const navigate = useNavigate()
 
   return (
-    <section>
-      <h2>Share your project</h2>
-      <p>Upload a description, tech stack, job title and a GitHub repo URL for feedback.</p>
+    <section className="max-w-2xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-bold mb-4">Share Your Project</h2>
+        <p className="text-muted-foreground text-lg">Upload a description, tech stack, job title and a GitHub repo URL for feedback.</p>
+      </div>
       <UploadForm onDone={(data) => navigate('/analyze', { state: data })} />
     </section>
   )
