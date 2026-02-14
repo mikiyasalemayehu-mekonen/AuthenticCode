@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className="bg-black">
+    <div className="b">
       <header className="topbar">
         <h1>Authenticode</h1>
         <nav>
